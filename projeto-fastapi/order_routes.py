@@ -18,3 +18,4 @@ async def criar_pedidos(pedido_schema: PedidoSchema, session: Session = Depends(
     session.add(novo_pedido)
     session.commit()
     return {"Mensagem": f"Pedido criado com sucesso. ID {novo_pedido.id}"}
+
